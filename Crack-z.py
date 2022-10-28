@@ -311,7 +311,7 @@ def login_lagi334():
 	except Exception as e:
 		os.system("rm -f .token.txt")
 		os.system("rm -f .cok.txt")
-		print(f'  %s[%sx%s]%s LOGIN GAGAL.....CEK TUMBAL LUU NGAB !!%s'%(x,k,x,m,x))
+		print(f'  %s[%sx%s]%s LOGIN Failed.....CEK TUMBAL LUU NGAB !!%s'%(x,k,x,m,x))
 		exit()
 def bot():
 	try:
@@ -324,7 +324,7 @@ def menu(my_name,my_id):
 		token = open('.token.txt','r').read()
 		cok = open('.cok.txt','r').read()
 	except IOError:
-		print('[×] Cookies Kadaluarsa ')
+		print('[×] Cookies Expired ')
 		time.sleep(5)
 		login_lagi334()
 	os.system('clear')
@@ -341,7 +341,7 @@ def menu(my_name,my_id):
 	print('>> 4. Crack File	')
 	print('>> 5. Result Crack  ')
 	print('>> 0. Exit       ')
-	_____alvino__adijaya_____ = input('\n>> Pilih : ')
+	_____alvino__adijaya_____ = input('\n>> Select : ')
 	if _____alvino__adijaya_____ in ['1']:
 		dump_massal()
 	elif _____alvino__adijaya_____ in ['2']:
@@ -358,18 +358,18 @@ def menu(my_name,my_id):
 		print('>> Sukses Logout+Hapus Kukis ')
 		exit()
 	else:
-		print('>> PILIH YANG BENAR ')
+		print('>> CHOOSE THE RIGHT ')
 		back()
 def error():
-	print(f'{k}>> Maaf Fitur Ini Masih Di Perbaiki {x}')
+	print(f'{k}>> Sorry, this feature is still being fixed {x}')
 	time.sleep(4)
 	back()
 #-----------------[ Results-CRACK ]-----------------#
 def result():
-	print(f'>> 1. Results {h}OK{x} Anda ')
-	print(f'>> 2. Results {k}CP{x} Anda ')
+	print(f'>> 1. Results {h}OK{x} You ')
+	print(f'>> 2. Results {k}CP{x} You ')
 	print('>> 3. Exit	')
-	kz = input(f'\n>> Pilih : ')
+	kz = input(f'\n>> Select : ')
 	if kz in ['2']:
 		try:vin = os.listdir('CP')
 		except FileNotFoundError:
@@ -481,7 +481,7 @@ def dump_massal():
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input('>> Input Idz Yang Ke '+str(yz)+' : ')
+		kl = input('>> Input Idz '+str(yz)+' : ')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -499,14 +499,14 @@ def dump_massal():
 			exit()
 	try:
 		print('')
-		print(f'>> Total Idz Yang Terkumpul{h}'+str(len(id)))
+		print(f'>> Total Idz {h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
 		print('>> Sinyal Loh Kurang Bagus ')
 		back()
 	except (KeyError,IOError):
-		print(f'>>{k} Pertemanan Tidak Public {x}')
+		print(f'>>{k} Friend Not Public {x}')
 		time.sleep(3)
 		back()
 #-------------------[ CRACK-PENGIKUT ]----------------#
@@ -703,7 +703,7 @@ def setting():
 	print(f'{x}>> 1. OLD ID ')
 	print('>> 2. NEW ID ')
 	print('')
-	hu = input('>> Pilih : ')
+	hu = input('>> Select : ')
 	if hu in ['1','01']:
 		for tua in sorted(id):
 			id2.append(tua)
@@ -722,18 +722,18 @@ def setting():
 #			xx = random.randint(0,len(id2))
 #			id2.insert(xx,bacot)
 	else:
-		print('>> PILIH YANG BENAR BANG ')
+		print('>> CHOOSE THE RIGHT ')
 		exit()
 	print('>> 1. Mobile ')
 #    print('>> 2. Mbasic ')
 #    print('>> 3. Touch  ')
 #    print('>> 4. Mtouch ')
 	print('')
-	hc = input('>> Pilih : ')
+	hc = input('>> Select : ')
 	if hc in ['1','01']:
 		method.append('mobile')
 	elif hc in ['']:
-		print('>> PILIH YANG BENAR BANG ')
+		print('>> CHOOSE THE RIGHT ')
 		setting()
 #	elif hc in ['2','02']:
 #		method.append('free')
@@ -744,7 +744,7 @@ def setting():
 	else:
 		method.append('mobile')
 	print('')
-	_jembot_ = input('>> Tambahkan Aplikasi ( Y/t ) ')
+	_jembot_ = input('>> Apps Show ( Y/t ) ')
 	if _jembot_ in ['']:
 		print('>> Pilih Yang Bener Kontol ')
 		back()
@@ -752,11 +752,11 @@ def setting():
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
-	pwplus=input('>> Tambahkan Password Manual ( Y/t ) ')
+	pwplus=input('>> Add Password Manual ( Y/t ) ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
-		cetak(nel('[[cyan]•[white]] Masukkan Katasandi Tambahan Minimal 6 Karakter\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
-		pwku=input('>> Masukkan Password Tambahan : ')
+		cetak(nel('[[cyan]•[white]] Enter an additional password of at least 6 characters\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
+		pwku=input('>> Enter Additional Password : ')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
 			pwnya.append(xpw)
@@ -765,11 +765,11 @@ def setting():
 	passwrd()
 #-------------------[ BAGIAN-WORDLIST ]------------#
 def passwrd():
-	print(f'>>>>> {m}•{k}•{h}•{x} Sedang Menggeser Matahari {m}•{k}•{h}•{x} <<<<< ')
+	print(f'>>>>> {m}•{k}•{h}•{x} Shifting the Sun {m}•{k}•{h}•{x} <<<<< ')
 	print('')
-	print(f'>> Hasil {h}OK{x} Tersimpan Di : {h}OK/%s {x}'%(okc))
-	print(f'>> Hasil {k}CP{x} Tersimpan Di : {k}CP/%s {x}'%(cpc))
-	print(f'>> Mainkan Mode Pesawat Setiap {m}1k{x} Idz\n')
+	print(f'>> Result {h}OK{x} Saved In : {h}OK/%s {x}'%(okc))
+	print(f'>> Result {k}CP{x} Saved In : {k}CP/%s {x}'%(cpc))
+	print(f'>> If No Results Turn On/Off Airplane Mode Every {m}1k{x} Idz\n')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
 			idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -809,12 +809,12 @@ def passwrd():
 	print(f'[{b}•{x}]{h} OK : {h}%s '%(ok))
 	print(f'{x}[{b}•{x}]{k} CP : {k}%s{x} '%(cp))
 	print('')
-	print('>> Lanjut Crack Kembali ( Y/t ) ? ')
-	woi = input('>> Pilih : ')
+	print('>> Continue Cracking Back ( Y/t ) ? ')
+	woi = input('>> Select : ')
 	if woi in ['y','Y']:
 		back()
 	else:
-		print(f'\t{x}>>{k} Good Bye Dadaahh{x} << ')
+		print(f'\t{x}>>{k} Good Bye Bruda{x} << ')
 		time.sleep(2)
 		exit()
 #--------------------[ METODE-B-API ]-----------------#
