@@ -467,9 +467,9 @@ def dump_massal():
 	except IOError:
 		exit()
 	try:
-		jum = int(input('>> TARGET ID ? : '))
+		jum = int(input('[+] TARGET ID ? : '))
 	except ValueError:
-		print('>> Masukkan Angka Anjing, Malah Huruff ')
+		print('[+] Masukkan Angka Anjing, Malah Huruff ')
 		exit()
 	if jum<1 or jum>100:
 		print('>> Gagal Dump Idz ')
@@ -478,7 +478,7 @@ def dump_massal():
 	yz = 0
 	for met in range(jum):
 		yz+=1
-		kl = input('>> Input Idz '+str(yz)+' : ')
+		kl = input('[+] Input Idz '+str(yz)+' : ')
 		uid.append(kl)
 	for userr in uid:
 		try:
@@ -496,14 +496,14 @@ def dump_massal():
 			exit()
 	try:
 		print('')
-		print(f'>> Total Idz {h}'+str(len(id)))
+		print(f'[+] Total Idz {h}'+str(len(id)))
 		setting()
 	except requests.exceptions.ConnectionError:
 		print(f'{x}')
 		print('>> Sinyal Loh Kurang Bagus ')
 		back()
 	except (KeyError,IOError):
-		print(f'>>{k} Friend Not Public {x}')
+		print(f'[+]{k} Friend Not Public {x}')
 		time.sleep(3)
 		back()
 #-------------------[ CRACK-PENGIKUT ]----------------#
@@ -697,10 +697,10 @@ def crack_file():
 		setting()
 #-------------[ PENGATURAN-IDZ ]---------------#
 def setting():
-	print(f'{x}>> 1. OLD ID ')
-	print('>> 2. NEW ID ')
+	print(f'{x}[+] 1. OLD ID ')
+	print('[+] 2. NEW ID ')
 	print('')
-	hu = input('>> Select : ')
+	hu = input('[+] Select : ')
 	if hu in ['1','01']:
 		for tua in sorted(id):
 			id2.append(tua)
@@ -721,16 +721,16 @@ def setting():
 	else:
 		print('>> CHOOSE THE RIGHT ')
 		exit()
-	print('>> 1. Mobile ')
-#    print('>> 2. Mbasic ')
-#    print('>> 3. Touch  ')
-#    print('>> 4. Mtouch ')
+	print('[+] 1. Mobile ')
+#    print('[+] 2. Mbasic ')
+#    print('[+] 3. Touch  ')
+#    print('[+] 4. Mtouch ')
 	print('')
 	hc = input('>> Select : ')
 	if hc in ['1','01']:
 		method.append('mobile')
 	elif hc in ['']:
-		print('>> CHOOSE THE RIGHT ')
+		print('[+] CHOOSE THE RIGHT ')
 		setting()
 #	elif hc in ['2','02']:
 #		method.append('free')
@@ -741,7 +741,7 @@ def setting():
 	else:
 		method.append('mobile')
 	print('')
-	_jembot_ = input('>> Apps Show ( Y/t ) ')
+	_jembot_ = input('[+] Apps Show ( Y/t ) ')
 	if _jembot_ in ['']:
 		print('>> Pilih Yang Bener Kontol ')
 		back()
@@ -749,11 +749,11 @@ def setting():
 		taplikasi.append('ya')
 	else:
 		taplikasi.append('no')
-	pwplus=input('>> Add Password Manual ( Y/t ) ')
+	pwplus=input('[+] Add Password Manual ( Y/t ) ')
 	if pwplus in ['y','Y']:
 		pwpluss.append('ya')
 		cetak(nel('[[cyan]•[white]] Enter an additional password of at least 6 characters\n[[cyan]•[white]] Contoh :[green] kakak,ngentod,adik[white] '))
-		pwku=input('>> Enter Additional Password : ')
+		pwku=input('[+] Enter Additional Password : ')
 		pwkuh=pwku.split(',')
 		for xpw in pwkuh:
 			pwnya.append(xpw)
